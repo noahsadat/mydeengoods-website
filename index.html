@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – mydeengoods</title>
+  <link rel="icon" type="image/png" href="logo-dark.png" id="favicon" />
+  <script>
+    const img = new Image();
+    img.onload = function () {
+      const zoom = 0.75;
+      const size = 64;
+      const canvas = document.createElement('canvas');
+      canvas.width = size;
+      canvas.height = size;
+      const ctx = canvas.getContext('2d');
+      const crop = img.width * zoom;
+      const offset = (img.width - crop) / 2;
+      ctx.drawImage(img, offset, offset, crop, crop, 0, 0, size, size);
+      document.getElementById('favicon').href = canvas.toDataURL('image/png');
+    };
+    img.src = 'logo-dark.png';
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", sans-serif;
+      background: #F2F2F7;
+      color: #1C1C1E;
+      line-height: 1.65;
+    }
+
+    header {
+      padding: 56px 24px 24px;
+      text-align: center;
+    }
+
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 22px;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18), 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #1C1C1E;
+    }
+
+    header p {
+      margin-top: 4px;
+      font-size: 1rem;
+      color: #8E8E93;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px 16px 80px;
+    }
+
+    section {
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 0.5px 0 rgba(0, 0, 0, 0.04);
+    }
+
+    h2 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #007AFF;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    p { margin-bottom: 10px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 6px 0 0 20px;
+    }
+
+    ul li { margin-bottom: 6px; }
+    ul li:last-child { margin-bottom: 0; }
+
+    .highlight {
+      background: rgba(0, 122, 255, 0.07);
+      border-left: 3px solid #007AFF;
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 10px;
+    }
+
+    a { color: #007AFF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.85rem;
+      color: #8E8E93;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo-dark.png" alt="mydeengoods app icon" />
+  <h1>mydeengoods</h1>
+  <p>Privacy Policy</p>
+</header>
+
+<main>
+
+  <section>
+    <p>This Privacy Policy describes how <strong>mydeengoods</strong> ("we", "us", or "our") handles information when you use our iOS, macOS, and visionOS application (the "App"). We are committed to protecting your privacy and being transparent about our practices.</p>
+    <p><strong>Last updated:</strong> February 2026</p>
+  </section>
+
+  <section>
+    <h2>Overview</h2>
+    <div class="highlight">
+      mydeengoods does not operate any backend servers, does not collect personal data on our own systems, does not display advertisements, and does not use any third-party analytics or tracking services. All data either stays on your device or is stored in your own personal iCloud account.
+    </div>
+  </section>
+
+  <section>
+    <h2>Information We Access</h2>
+    <p>The App requests access to the following information solely to provide its features:</p>
+
+    <p><strong>Location</strong><br />
+    Your geographic location is used to calculate accurate Islamic prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha) and to point the Qibla compass toward Mecca. Location data is processed on-device and is never transmitted to us or any third party. You can disable location access in your device Settings at any time; the App will fall back to a manually entered location.</p>
+
+    <p><strong>Contacts</strong><br />
+    With your permission, the App reads your contacts to let you choose a display name and profile photo for the trivia feature and to build a friends list for multiplayer games. Contact information is used locally on your device only and is never uploaded to our servers or shared with anyone.</p>
+
+    <p><strong>Notifications</strong><br />
+    The App may send local push notifications to remind you of prayer times. These notifications are scheduled entirely on your device. No notification content is transmitted externally.</p>
+  </section>
+
+  <section>
+    <h2>Data You Create in the App</h2>
+    <p>The App stores the following data locally on your device using Apple's SwiftData framework:</p>
+    <ul>
+      <li>Prayer time settings and calculation preferences</li>
+      <li>Quran reading position, bookmarks, and display preferences</li>
+      <li>Your display name and profile photo (for the trivia feature)</li>
+      <li>Trivia game scores, history, and friends list</li>
+    </ul>
+    <p>If you are signed in to iCloud, this data may be synced to your personal iCloud account via Apple's CloudKit service so it is available across your Apple devices. This sync goes to your own private iCloud account — we have no access to it.</p>
+  </section>
+
+  <section>
+    <h2>Third-Party Services</h2>
+    <p>The App integrates with the following Apple platform services:</p>
+
+    <p><strong>Apple iCloud / CloudKit</strong><br />
+    Used to sync your settings and data across your own Apple devices. Governed by Apple's Privacy Policy. iCloud sync is optional and only active if you are signed in to iCloud.</p>
+
+    <p><strong>Apple Game Center</strong><br />
+    Used for multiplayer trivia matchmaking, friend invitations, and leaderboards. Governed by Apple's Privacy Policy. Game Center is only used when you engage with multiplayer features.</p>
+
+    <p><strong>Apple Maps</strong><br />
+    Used by the Mosque Finder feature to search for nearby mosques. Search queries are handled by Apple and governed by Apple's Privacy Policy.</p>
+
+    <p>The App uses the following open-source libraries, all of which run entirely on-device and make no network requests:</p>
+    <ul>
+      <li><strong>Adhan Swift</strong> (MIT License) – mathematical prayer time calculations</li>
+      <li><strong>Quran data</strong> – Quran text and translations, bundled within the App</li>
+      <li><strong>Amiri Quran Font</strong> (SIL OFL 1.1) – Arabic Quran text rendering</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Data We Do Not Collect</h2>
+    <p>We do not collect, store, or process any of the following:</p>
+    <ul>
+      <li>Account credentials or email addresses</li>
+      <li>Payment or financial information (the App is free with no in-app purchases)</li>
+      <li>Advertising identifiers or behavioral tracking data</li>
+      <li>Crash reports or usage analytics sent to our systems</li>
+      <li>Any data on our own servers — we have none</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>The App is not directed at children under the age of 13. We do not knowingly collect personal information from children. Because the App does not collect data on our own servers, there is no data for us to delete, but if you have concerns please contact us using the details below.</p>
+  </section>
+
+  <section>
+    <h2>Your Rights and Choices</h2>
+    <p>Because all data is stored on your device or in your personal iCloud account, you remain in full control:</p>
+    <ul>
+      <li><strong>Delete app data:</strong> Delete the App from your device to remove all locally stored data.</li>
+      <li><strong>Revoke location access:</strong> Change in your device Settings → Privacy &amp; Security → Location Services.</li>
+      <li><strong>Revoke contacts access:</strong> Change in your device Settings → Privacy &amp; Security → Contacts.</li>
+      <li><strong>Disable iCloud sync:</strong> Sign out of iCloud or disable iCloud for mydeengoods in your device Settings.</li>
+      <li><strong>Disable notifications:</strong> Change in your device Settings → Notifications → mydeengoods.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Security</h2>
+    <p>All data is processed and stored using Apple's native frameworks (SwiftData, CloudKit), which benefit from Apple's platform-level security, including hardware-backed encryption on your device and end-to-end encryption for iCloud data where supported.</p>
+  </section>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date at the top of this page. We encourage you to review this page periodically. Continued use of the App after changes constitutes your acceptance of the updated policy.</p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+    <p><a href="mailto:contact@mydeengoods.com">contact@mydeengoods.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 <a href="https://sadat.info">Noah Sadat</a>. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
